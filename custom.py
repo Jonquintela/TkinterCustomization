@@ -56,23 +56,11 @@ def update_scoreboard():
         f.write(f"Score: {score}/{len(questions)}\n")
 
 def clear_scoreboard():
-    with open("scores.txt", "a") as f:
-        f.reconfigure('''
-            Score: -/3
-            Score: -/3
-            Score: -/3
-            Score: -/3
-            Score: -/3
-            Score: -/3
-            Score: -/3
-            Score: -/3
-            Score: -/3
-            Score: -/3
-            Score: -/3
-            Score: -/3
-            Score: -/3
-            Score: -/3
-            ''')
+    with open("scores.txt", "w") as f:
+        f.write('''
+Scores:
+
+''')
 
 
 
